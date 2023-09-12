@@ -10,6 +10,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: darkkhaki;
 }
 
 .slider_content {
@@ -76,7 +77,6 @@ input[type="radio"] {
 }
 
 label {
-  /* border: 0.1rem solid aqua; */
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
@@ -108,4 +108,15 @@ body:has(input[value="third"]:checked) .slider_images, body:has(input[value="thi
 
 body:has(input[value="fourth"]:checked) .slider_images, body:has(input[value="fourth"]:checked) .slider_text {
   margin-left: -300%;
+}
+
+@media (max-width: 680px) {
+
+  .slider_footer {
+    flex-direction: column;
+  }
+
+  .radio_button {
+    align-self: center;
+  }
 }
