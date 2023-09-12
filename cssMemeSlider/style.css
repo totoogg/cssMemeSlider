@@ -1,0 +1,18 @@
+.a {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  transition: all 1s;
+}
+
+body:has(input[value="first"]:checked) .a{
+  background-color: red;
+}
+
+body:has(input[value="second"]:checked) .a{
+  background-color: green;
+}
+
+body:has(input[value="third"]:checked) .a{
+  background-color: yellow;
+}
