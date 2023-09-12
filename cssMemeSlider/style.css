@@ -15,7 +15,7 @@ body {
 .slider_content {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 1rem;
   width: 100%;
   overflow: hidden;
   background-color: rgb(43, 67, 73);
@@ -69,6 +69,29 @@ body {
   align-items: center;
   width: 25%;
   justify-content: space-between;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  /* border: 0.1rem solid aqua; */
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+input[type=radio]:checked + label > svg > circle {
+  fill: aqua;
+}
+
+label:hover > svg > circle {
+  fill: rgba(0, 255, 255, 0.428);
+}
+
+label:active > svg > circle {
+  fill: rgba(0, 72, 255, 0.92);
 }
 
 body:has(input[value="first"]:checked) .slider_images, body:has(input[value="first"]:checked) .slider_text {
